@@ -40,8 +40,8 @@ def coffee():
 
 
 def kilometers_to_miles():
-    kilometers_traveled = eval(input("How many kilometers did you travel?"))
-    k_to_m = kilometers_traveled / 1.61
+    traveled_kilometers = eval(input("How many kilometers did you travel?"))
+    k_to_m = traveled_kilometers / 1.61
     round_k_to_m = round(k_to_m, 2)
     print("That's", round_k_to_m, "miles!")
 
