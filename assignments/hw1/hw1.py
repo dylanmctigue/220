@@ -1,35 +1,45 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: Dylan McTigue
+hw1.py
 
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
+Problem: Writing functions to compute certain scenarios such as the area of the rectangle,
+kilometers to miles, and shooting percentage. Allows user to pug in numbers to calculate formulas.
 
 Certification of Authenticity:
-<include one of the following>
 I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
 
 
 def calc_rec_area():
-    pass
-
+    length = eval(input("Enter the length: "))
+    width = eval(input("Enter the width: "))
+    area = length * width
+    print("The area is", area)
 
 def calc_volume():
-    pass
-
+    length = eval(input("enter the length: "))
+    width = eval(input("enter the width: "))
+    height = eval(input("enter the height: "))
+    volume = length * width * height
+    print("The volume of the rectangular solid is", volume)
 
 def shooting_percentage():
-    pass
-
+    total_shots = eval(input("Enter the player's total shots: "))
+    shots_made = eval(input("Enter how many shots the player made: "))
+    shoot_percentage = (shots_made / total_shots) * 100
+    round_shoot_percentage = round(shoot_percentage, 2)
+    print("The shooting percentage is", round_shoot_percentage, "%")
 
 def coffee():
-    pass
-
+    pounds_coffee_purchase = eval(input("How many pounds of coffee would you like?"))
+    total = ((10.50 + .86) * pounds_coffee_purchase) + 1.50
+    print("Your total is $", total)
 
 def kilometers_to_miles():
-    pass
-
+    kilometers_travled = eval(input("How many kilometers did you travel?"))
+    k_to_m = kilometers_travled / 1.61
+    round_k_to_m = round(k_to_m, 2)
+    print("That's", round_k_to_m, "miles!")
 
 if __name__ == '__main__':
     pass
