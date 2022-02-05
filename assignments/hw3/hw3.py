@@ -50,15 +50,20 @@ def newton():
 
 def sequence():
     term_num = eval(input("How many terms would you like?"))
-    x = 0
-    for i in range(term_num):
-        term = (i + 3) % (i + 4)
-        print(term, end=" ")
-        x = x + 4
+    for i in range(1, term_num + 1):
+        terms = (i - 1) + (i % 2)
+        print(terms, end=" ")
 
 
 def pi():
-    pass
+    series_num = eval(input("How many terms in the series?"))
+    acc_pi = 1
+    for i in range(series_num):
+        numerator = i + (2 - (i % 2))
+        denominator = i + (1 + (i % 2))
+        acc_pi = acc_pi * (numerator / denominator)
+    pi_estimate = acc_pi * 2
+    print("the estimate for pi is:", pi_estimate)
 
 
 if __name__ == '__main__':
