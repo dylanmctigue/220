@@ -55,7 +55,6 @@ def sequence():
         term = (i + 3) % (i + 4)
         print(term, end=" ")
         x = x + 4
-sequence()
 
 
 def pi():
