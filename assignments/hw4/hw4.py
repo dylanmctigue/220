@@ -12,7 +12,6 @@ I certify that this assignment is entirely my own work.
 import math
 from graphics import GraphWin, Point, Text, Rectangle, Circle
 
-
 def squares():
 
     width = 400
