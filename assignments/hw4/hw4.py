@@ -9,8 +9,8 @@ Certification of Authenticity:
 I certify that this assignment is entirely my own work.
 """
 
-from graphics import *
 import math
+from graphics import GraphWin, Point, Text, Rectangle, Circle
 
 
 def squares():
@@ -31,7 +31,7 @@ def squares():
     shape.setFill("red")
     shape.draw(win)
 
-    for i in range(num_clicks):
+    for _ in range(num_clicks):
         click = win.getMouse()
         center = shape.getCenter()  # center of circle
 
@@ -121,7 +121,7 @@ def pi2():
     sign_change = 1
     acc_sum = 0
 
-    for i in range(number_to_sum):
+    for _ in range(number_to_sum):
         pi_approx = pi_approx + acc_sum
 
         sign_change = (-1) * sign_change
