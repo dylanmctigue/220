@@ -213,3 +213,30 @@ def another_series():
 
 
 def target():
+    win = GraphWin("Target", 500, 500)
+    win.setCoords(0, 0, 10, 10)
+
+    circle_1 = Circle(Point(5, 5), 5)
+    circle_1.setFill("white")
+    circle_1.draw(win)
+
+    circle_2 = Circle(Point(5, 5), 4)
+    circle_2.setFill("black")
+    circle_2.draw(win)
+
+    circle_3 = Circle(Point(5, 5), 3)
+    circle_3.setFill("blue")
+    circle_3.draw(win)
+
+    circle_4 = Circle(Point(5, 5), 2)
+    circle_4.setFill("red")
+    circle_4.draw(win)
+
+    circle_5 = Circle(Point(5, 5), 1)
+    circle_5.setFill("yellow")
+    circle_5.draw(win)
+
+    click_close = Text(Point(5, 5), "Click again to close")
+    click_close.draw(win)
+    win.getMouse()
+    win.close()
