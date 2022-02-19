@@ -1,42 +1,109 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: Dylan McTigue
+hw5.py
 
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
+Problem: Use python strings, lists, slicing, and indexing to write simple programs.
 
 Certification of Authenticity:
-<include one of the following>
 I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
 
 
 def name_reverse():
-    pass
+    full_name = input("Enter a name(first last): ")
+    full_name_split = full_name.split(" ")
+    print(full_name_split[1], end=", ")
+    print(full_name_split[0])
 
 
 def company_name():
-    pass
+    domain = input("Enter a domain: ")
+    domain_split = domain.split(".")
+    print(domain_split[1])
 
 
 def initials():
-    pass
+    students = eval(input("how many students are in the class?"))
+
+    for num in range(students):
+        question = "What is the name of student " + str(num + 1) + "? "
+        name = input(question)
+
+        name_split = name.split(" ")
+        first = name_split[0][0]
+        last = name_split[1][0]
+        first_last_initials = first + last
+        print(first_last_initials)
 
 
 def names():
-    pass
+    name_list = input("Enter a list of names: ")
+    list_split = name_list.split(" ")
+    comma_list_split = name_list.split(", ")
+
+    acc_first = 0
+    acc_last = 1
+
+    for _ in range(len(comma_list_split)):
+        first = list_split[acc_first][0]
+        last = list_split[acc_last][0]
+
+        acc_first = acc_first + 2
+        acc_last = acc_last + 2
+
+        first_last_initials = first + last
+        print(first_last_initials, end=" ")
 
 
 def thirds():
-    pass
+    num_sentences = eval(input("Enter the number of sentences: "))
+    third = ""
+
+    for sent_num in range(num_sentences):
+        question = "enter sentence " + str(sent_num + 1) + ": "
+        sentence = input(question)
+
+        third = third + sentence[::3]
+    print(third)
 
 
 def word_average():
-    pass
+    sentence = input("enter a sentence: ")
+    sentence_split = sentence.split(" ")
+
+    acc_sum = 0
+
+    list_length = len(sentence_split)
+
+    for i in range(list_length):
+        acc_sum = acc_sum + int(len(sentence_split[i]))
+
+    average = acc_sum / list_length
+
+    print(average)
 
 
 def pig_latin():
-    pass
+    sentence = input("enter a sentence to convert to pig latin: ")
+
+    sentence_split = sentence.split(" ")
+    length = len(sentence_split)
+
+    pig_list = []
+
+    for i in range(length):
+        first_letter = sentence_split[i][0]
+        word = sentence_split[i]
+        word_replace = word.replace(first_letter, "")
+
+        pig_word = word_replace + first_letter + "ay"
+        pig_list.append(pig_word)
+
+    pig_words = " ".join(pig_list)
+
+    pig_lower = pig_words.lower()
+
+    print(pig_lower)
 
 
 if __name__ == '__main__':
