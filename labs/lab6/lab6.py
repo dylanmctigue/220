@@ -80,5 +80,3 @@ def Vigenere():
     click_to_close.draw(win)
     win.getMouse()
     win.close()
-
-Vigenere()
