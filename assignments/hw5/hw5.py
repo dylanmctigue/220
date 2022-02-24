@@ -14,13 +14,13 @@ def name_reverse():
     full_name_split = full_name.split(" ")
     print(full_name_split[1], end=", ")
     print(full_name_split[0])
-name_reverse()
+
 
 def company_name():
     domain = input("Enter a domain: ")
     domain_split = domain.split(".")
     print(domain_split[1])
-company_name()
+
 
 def initials():
     students = eval(input("how many students are in the class?"))
@@ -34,7 +34,7 @@ def initials():
         last = name_split[1][0]
         first_last_initials = first + last
         print(first_last_initials)
-initials()
+
 
 def names():
     name_list = input("Enter a list of names: ")
@@ -53,7 +53,7 @@ def names():
 
         first_last_initials = first + last
         print(first_last_initials, end=" ")
-names()
+
 
 def thirds():
     num_sentences = eval(input("Enter the number of sentences: "))
@@ -65,7 +65,7 @@ def thirds():
 
         third = third + sentence[::3]
     print(third)
-thirds()
+
 
 def word_average():
     sentence = input("enter a sentence: ")
@@ -81,7 +81,7 @@ def word_average():
     average = acc_sum / list_length
 
     print(average)
-word_average()
+
 
 def pig_latin():
     sentence = input("enter a sentence to convert to pig latin: ")
@@ -104,7 +104,7 @@ def pig_latin():
     pig_lower = pig_words.lower()
 
     print(pig_lower)
-pig_latin()
+
 
 if __name__ == '__main__':
     # name_reverse()
