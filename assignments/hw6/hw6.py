@@ -80,6 +80,7 @@ def encode_better():
         character = chr(sum_num + 65)
 
         concatenation = concatenation + character
+
     print(concatenation)
 
 
