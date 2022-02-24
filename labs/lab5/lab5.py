@@ -138,7 +138,7 @@ def color_shape():
     # Wait for another click to exit
     win.getMouse()
     win.close()
-
+color_shape()
 
 def process_string():
     string = input("Enter a string: ")

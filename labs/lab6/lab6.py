@@ -42,6 +42,7 @@ def Vigenere():
     message = message.upper()
 
     keyword = keyword_entry.getText()
+    keyword = keyword.replace(" ", "")
     keyword = keyword.upper()
 
     concatenation = ""
@@ -60,9 +61,9 @@ def Vigenere():
         keyword_num = ord(each_letter_keyword)
         keyword_new_num = keyword_num - 65
 
-        sum = message_new_num + keyword_new_num
+        sum_num = message_new_num + keyword_new_num
 
-        new_sum = sum % 26
+        new_sum = sum_num % 26
 
         character = chr(new_sum + 65)
 
@@ -80,3 +81,4 @@ def Vigenere():
     click_to_close.draw(win)
     win.getMouse()
     win.close()
+Vigenere()
