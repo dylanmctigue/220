@@ -19,6 +19,7 @@ def cash_converter():
 
 def encode():
     message = input("enter a message: ")
+
     key = eval(input("enter a key: "))
 
     output = ""
