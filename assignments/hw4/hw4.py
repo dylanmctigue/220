@@ -45,7 +45,7 @@ def squares():
 
     win.getMouse()
     win.close()
-squares()
+
 
 def rectangle():
     win = GraphWin("Rectangle", 500, 500)
@@ -82,7 +82,7 @@ def rectangle():
     click_to_close.draw(win)
     win.getMouse()
     win.close()
-rectangle()
+
 
 def circle():
     win = GraphWin("Circle", 500, 500)
@@ -110,7 +110,7 @@ def circle():
     close_win.draw(win)
     win.getMouse()
     win.close()
-circle()
+
 
 def pi2():
     number_to_sum = eval(input("enter the number of terms to sum: "))
@@ -132,7 +132,7 @@ def pi2():
 
     print("pi approximation:", pi_approx)
     print("accuracy:", accuracy)
-pi2()
+
 
 if __name__ == '__main__':
     pass
