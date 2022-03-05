@@ -11,7 +11,6 @@ def encode(message, key):
 
 def encode_better(message, key):
     message_length = len(message)
-    key = str(key)
 
     concatenation = ""
 
