@@ -128,7 +128,7 @@ def get_winner(board):
 
 def play(board):
     print("Hello! Welcome to TikTacToe.")
-    print("To play, take turns entering the number of the position you would like to play when prompted")
+    print("To play, take turns entering an 'x' or an 'o' by entering a number corresponding to the squares.")
 
     playing = True
     current_game = True
