@@ -9,6 +9,7 @@ to leave
 Certification of Authenticity:
 I certify that this assignment is entirely my own work.
 """
+
 from button import Button
 from door import Door
 from graphics import GraphWin, Rectangle, Point

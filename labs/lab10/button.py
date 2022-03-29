@@ -1,10 +1,9 @@
 """
 Name: Dylan McTigue
-lab10.py
+button.py
 
-Problem: Create Button Class and Door Class that encapsulates data in a graphics window,
-which allows the user to click the door to open and close it, then press exit when they want
-to leave
+Problem: Create button class to encapsulate exit button in window that they can
+then press exit when they want to leave
 
 Certification of Authenticity:
 I certify that this assignment is entirely my own work.
