@@ -44,7 +44,7 @@ def num_digits():
             while check != 0:
                 check = check // 10
                 count += 1
-            print(count)
+            print('The number you entered has {} digits'.format(count))
         else:
             pos_int = False
 

@@ -30,5 +30,6 @@ def is_in_linear(search_val, values):
     while i < len(values):
         if search_val == values[i]:
             check = True
+            i = len(values)
         i += 1
     return check
